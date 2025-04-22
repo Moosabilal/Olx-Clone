@@ -2,17 +2,17 @@
 import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider } from "firebase/auth"; 
 import {getStorage} from 'firebase/storage'
-import { collection, getDocs, getFirestore } from "firebase/firestore"; 
+import { collection, getDocs, getFirestore } from "firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDmNuScmarzDdt-KuzGss_sj9Yb72OkkBY",
-  authDomain: "olx-clone-c0391.firebaseapp.com",
-  databaseURL: "https://olx-clone-c0391-default-rtdb.firebaseio.com",
-  projectId: "olx-clone-c0391",
-  storageBucket: "olx-clone-c0391.firebasestorage.app",
-  messagingSenderId: "722211915562",
-  appId: "1:722211915562:web:ef7864c6936dcee6244053"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
 
